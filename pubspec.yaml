@@ -1,0 +1,70 @@
+name: quiz_vision_ai
+description: AI-powered quiz assistant with live camera OCR and intelligent answer detection
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+  flutter: '>=3.16.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Camera & Image Processing
+  camera: ^0.10.5+9
+  image: ^4.1.7
+
+  # OCR
+  google_mlkit_text_recognition: ^0.13.1
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Database & Storage
+  sqflite: ^2.3.2
+  path_provider: ^2.1.2
+  path: ^1.9.0
+  shared_preferences: ^2.2.3
+
+  # Networking
+  dio: ^5.4.3+1
+  connectivity_plus: ^6.0.3
+
+  # UI & Design
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  blur: ^3.1.0
+  percent_indicator: ^4.2.3
+  lottie: ^3.1.2
+
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.4.0
+  permission_handler: ^11.3.1
+  flutter_tts: ^4.0.2
+  share_plus: ^9.0.0
+  pdf: ^3.11.0
+  csv: ^6.0.0
+
+  # Icons
+  cupertino_icons: ^1.0.6
+  material_design_icons_flutter: ^7.0.7296
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.9
+  riverpod_generator: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/animations/
+    - assets/data/
+  fonts:
+    - family: IBMPlexMono
+      fonts:
+        - asset: assets/fonts/IBMPlexMono-Regular.ttf
+        - asset: assets/fonts/IBMPlexMono-Bold.ttf
